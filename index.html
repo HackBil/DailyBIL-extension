@@ -16,20 +16,24 @@
   	</head>
   	<body>
 		<div id="header">
-			<h2><i class="icon-rocket"></i> BoostInLyon</h2>
+			<h2><i class="icon-tags"></i> DailyBIL</h2>
 		</div>
 		<div id="container">
-			<form method="POST">
-				<select name="token" class="chosen">
-					<option value="">BoostinLyon</option>
-				</select>
-				<div class="space-4"></div>
+			<form method="POST" id="veille">
+				<input type="hidden" name="token" value="6b13a46d9125271ccbdc55d8b15297478c07b403009aaedcc291d12e68c86e24" />
 				<input type="hidden" name="url" id="url" />
-				<input type="text" name="titre" id="titre" placeholder="Spécifiez le titre..." />
+				<input disabled type="text" name="categories" id="categories" placeholder="Entrez les hashtag..." />
 				<div class="space-4"></div>
-				<input type="text" name="categories" id="categories" placeholder="Entrez les catégories..." />
+				<input type="text" name="title" id="title" placeholder="Spécifiez le titre..." />
 				<div class="space-4"></div>
-				<button type="submit"><i class="icon-save"></i> Enregistrer</button>
+				<div class="input-group">
+					<span class="input-group-addon">
+						Via @
+					</span>
+					<input class="form-control" type="text" name="user" id="user" />
+				</div>
+				<div class="space-4"></div>
+				<button type="submit"><i class="icon-ok"></i> Enregistrer</button>
 			</form>
 			<div class="clearfix"></div>
 			<p>Propulsé par @<a href="http://twitter.com/BoostInLyon" target="_blank">BoostInLyon</a></p>
@@ -43,8 +47,8 @@
 		<script src="/js/jquery.ui.touch-punch.min.js"></script>
 
 		<!-- Ace Library -->
-		<script src="/js/typeahead-bs2.min.js"></script>
 		<script src="/js/jquery.mobile.custom.min.js"></script>
+		<script src="/js/typeahead-bs2.min.js"></script>
 		<script src="/js/chosen.jquery.min.js"></script>
 		<script src="/js/bootstrap-tag.min.js"></script>
 

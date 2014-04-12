@@ -40,6 +40,11 @@ form input
 	width:100%;
 }
 
+.tags
+{
+	width:100%;
+}
+
 .tags .tag
 {
 	background:#cc3b28;
