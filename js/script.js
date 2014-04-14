@@ -1,6 +1,12 @@
 var enregistrer = function(){
+	var data = "user="+$('#user').val();
+	data+= "&token="+$('#token').val();
+	data+= "&url="+$('#url').val();
+	data+= "&title="+$('#title').val();
+	var categories = $("#categories").val().replace("#","");
+	data+= "&categories="+categories;
 	$.post('http://dailybil.herokuapp.com/news',
-		$('#veille').serialize(),
+		data,
 		function(data)
 		{	
 			window.close();

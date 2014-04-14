@@ -20,9 +20,14 @@
 		</div>
 		<div id="container">
 			<form method="POST" id="veille">
-				<input type="hidden" name="token" value="6b13a46d9125271ccbdc55d8b15297478c07b403009aaedcc291d12e68c86e24" />
+				<input type="hidden" name="token" id="token" value="6b13a46d9125271ccbdc55d8b15297478c07b403009aaedcc291d12e68c86e24" />
 				<input type="hidden" name="url" id="url" />
-				<input disabled type="text" name="categories" id="categories" placeholder="Entrez les hashtag..." />
+				<div class="input-group">
+					<span class="input-group-addon">
+						#
+					</span>
+					<input disabled type="text" name="categories" id="categories" placeholder="Entrez les hashtag..." />
+				</div>
 				<div class="space-4"></div>
 				<input type="text" name="title" id="title" placeholder="Spécifiez le titre..." />
 				<div class="space-4"></div>
